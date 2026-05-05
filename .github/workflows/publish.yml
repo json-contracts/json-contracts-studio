@@ -49,6 +49,11 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish package to npm
-        run: npm publish --provenance
+        run: |
+          npm publish --provenance || {
+            status=$?
+            echo "::error title=npm publish failed::If this failed with EOTP, replace repository secret NPM_TOKEN with an npm Automation/granular publish token or configure npm Trusted Publishing for this GitHub workflow. Normal 2FA login tokens cannot publish from Actions."
+            exit "$status"
+          }
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
