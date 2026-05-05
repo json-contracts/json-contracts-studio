@@ -1,6 +1,6 @@
 {
   "name": "json-contracts-studio",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Local web Studio for testing natural-language-to-JSON workflows with JSON Contracts.",
   "type": "module",
   "bin": {
@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/json-contracts/json-contracts-studio#readme",
   "dependencies": {
-    "json-contracts": "^0.1.1"
+    "json-contracts": "^0.1.3"
   },
   "engines": {
     "node": ">=20.0.0"
