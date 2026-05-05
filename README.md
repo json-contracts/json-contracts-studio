@@ -1,11 +1,11 @@
 # JSON Contracts Studio
 
-A tiny local web UI for demonstrating and testing `json-contracts` workflows. This package imports the `json-contracts` MCP package for contract loading, tool handlers, and validation.
+A tiny local web UI for demonstrating and testing natural-language-to-JSON workflows with `json-contracts`. This package imports the `json-contracts` MCP package for contract loading, tool handlers, and JSON Schema validation.
 
 It is organized around a hideable configuration sidebar and two workflow tabs:
 
 1. **Configuration sidebar** — choose the contract repository folder and LLM provider/model once, then use the left-edge arrow to hide or reveal the sidebar when you are ready to work.
-2. **Generate JSON** — choose a contract in Step 1, then generate, validate, edit, and repair JSON against it.
+2. **Generate JSON** — choose a contract in Step 1, then turn natural-language input into JSON, validate, edit, and repair JSON against it.
 3. **New contract** — generate a draft contract file from a natural-language app behavior, validate it, and save it into the configured contract repository.
 
 Provider calls are demo-only Studio behavior. The production MCP stdio server still does not call LLMs and does not use API keys.

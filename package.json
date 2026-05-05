@@ -1,7 +1,7 @@
 {
   "name": "json-contracts-studio",
   "version": "0.1.1",
-  "description": "Local web Studio for JSON Contracts MCP workflows, demos, and contract drafting.",
+  "description": "Local web Studio for testing natural-language-to-JSON workflows with JSON Contracts.",
   "type": "module",
   "bin": {
     "json-contracts-studio": "./server.mjs"
