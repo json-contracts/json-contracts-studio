@@ -1,0 +1,50 @@
+{
+  "name": "json-contracts-studio",
+  "version": "0.1.0",
+  "description": "Local web Studio for JSON Contracts MCP workflows, demos, and contract drafting.",
+  "type": "module",
+  "bin": {
+    "json-contracts-studio": "./server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "public",
+    ".env.example",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "TRADEMARKS.md",
+    "package.json"
+  ],
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "keywords": [
+    "json-contracts",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "json-schema",
+    "llm",
+    "ai-agent",
+    "structured-output",
+    "studio",
+    "contract-drafting"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/json-contracts/json-contracts-studio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/json-contracts/json-contracts-studio/issues"
+  },
+  "homepage": "https://github.com/json-contracts/json-contracts-studio#readme",
+  "dependencies": {
+    "json-contracts": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
