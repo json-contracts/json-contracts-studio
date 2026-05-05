@@ -10,25 +10,34 @@ It is organized around a hideable configuration sidebar and two workflow tabs:
 
 Provider calls are demo-only Studio behavior. The production MCP stdio server still does not call LLMs and does not use API keys.
 
-## Quickstart
+## 30-second quickstart
 
-Run without installing:
+Initialize starter contracts with the main MCP package first, then launch Studio:
 
 ```bash
+mkdir my-json-contracts
+cd my-json-contracts
+npx -y json-contracts@latest init
 npx -y json-contracts-studio@latest
-```
-
-Or from this repository root:
-
-```bash
-npm install
-npm start
 ```
 
 Open:
 
 ```text
 http://127.0.0.1:5177
+```
+
+If you already have a contract folder, skip `init` and run Studio with `JSON_CONTRACTS_DIR` pointed at your folder:
+
+```bash
+JSON_CONTRACTS_DIR=/absolute/path/to/json-contracts npx -y json-contracts-studio@latest
+```
+
+Or from this repository root for development:
+
+```bash
+npm install
+npm start
 ```
 
 Then:
