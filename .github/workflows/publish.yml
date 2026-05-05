@@ -38,6 +38,16 @@ jobs:
       - name: Pack check
         run: npm run pack:dry-run
 
+      - name: Verify npm auth
+        run: |
+          if [ -z "${NODE_AUTH_TOKEN:-}" ]; then
+            echo "::error title=Missing NPM_TOKEN::Add an npm publish token as the repository secret named NPM_TOKEN."
+            exit 1
+          fi
+          npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Publish package to npm
         run: npm publish --provenance
         env:

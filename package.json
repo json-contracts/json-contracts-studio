@@ -4,7 +4,7 @@
   "description": "Local web Studio for testing natural-language-to-JSON workflows with JSON Contracts.",
   "type": "module",
   "bin": {
-    "json-contracts-studio": "./server.mjs"
+    "json-contracts-studio": "server.mjs"
   },
   "files": [
     "server.mjs",
