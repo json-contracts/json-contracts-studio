@@ -1,6 +1,6 @@
 {
   "name": "json-contracts-studio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Local web Studio for JSON Contracts MCP workflows, demos, and contract drafting.",
   "type": "module",
   "bin": {
@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/json-contracts/json-contracts-studio#readme",
   "dependencies": {
-    "json-contracts": "^0.1.0"
+    "json-contracts": "^0.1.1"
   },
   "engines": {
     "node": ">=20.0.0"
