@@ -30,10 +30,13 @@ jobs:
           test "$TAG_VERSION" = "$PACKAGE_VERSION"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Test package
+        run: npm test
 
       - name: Pack check
-        run: npm pack --dry-run
+        run: npm run pack:dry-run
 
       - name: Publish package to npm
         run: npm publish --provenance

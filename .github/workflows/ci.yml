@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: "22"
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+      - name: Test package
+        run: npm test
       - name: Pack check
-        run: npm pack --dry-run
+        run: npm run pack:dry-run

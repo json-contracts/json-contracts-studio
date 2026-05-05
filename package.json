@@ -18,7 +18,10 @@
   ],
   "scripts": {
     "start": "node server.mjs",
-    "dev": "node server.mjs"
+    "dev": "node server.mjs",
+    "check": "node --check server.mjs",
+    "test": "npm run check",
+    "pack:dry-run": "npm pack --dry-run"
   },
   "keywords": [
     "json-contracts",
